@@ -3,7 +3,7 @@ MedicineScheduler
 
 This is a small project where user can create a account and then can add Medicine scheduler to ensure proper intake of medicine as per prescription.
 
-created using Python3 , django 2.2.5 , Postgresql .
+created using Python3 , django 2.2.5 , Postgresql, Bootstrap 4 .
 
 Functionality 
 >Login/signup/logout activities
