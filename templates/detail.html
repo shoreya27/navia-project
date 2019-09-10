@@ -16,6 +16,11 @@
             <p class="card-text">Medicine Timings: {{ medicines.select_timing }}</p>
             <p class="card-text">Medicine Duration: {{ medicines.med_duration }} days</p>
             <p class="card-text">treatment Duration: {{ medicines.treatment_duration }} days</p>
+            <form action="{% url 'delete' medicines.id%}" method="post">
+              {% csrf_token %}
+            <input type="submit" class="btn btn-danger" value="delete">
+            </form>
+
           </div>
         </div>
       </div>

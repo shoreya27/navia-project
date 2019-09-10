@@ -22,6 +22,7 @@ urlpatterns = [
     path('accounts/',include('accounts.urls'),name='accounts'),
     path('', views.home, name='home'),
     path('details/', views.details, name='detail'),
+    path('delete/<int:id>/', views.delete, name='delete'),
 
     path('medicines/',include('dailymedicine.urls'), name='createmed'),
 ]
