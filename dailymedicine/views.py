@@ -14,7 +14,7 @@ def create(request):
             medicine.treatment_duration=request.POST['treat_dur']
             medicine.patient=request.user
             medicine.save()
-            return redirect('home')
+            return redirect('detail')
         else:
             return render(request,'create.html',{'error':'All fields are required'})
     else:

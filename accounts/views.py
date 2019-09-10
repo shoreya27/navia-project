@@ -10,7 +10,7 @@ def login(request):
             return  render(request,'login.html',{'error':'invalid credentials!!'})
         else:
             auth.login(request,user)
-            return redirect('home')
+            return redirect('detail')
     return render(request,'login.html')
 
 

@@ -18,3 +18,6 @@ class Medicines(models.Model):
 
     def __str__(self):
         return self.medicine_name
+
+    def summary(self):
+        return "Medicine_name: " +self.medicine_name + "\n" + "frequency "+str(self.frequency)+ '\n' + "select_timing "+str(self.select_timing)+ '\n' +"med_duration "+str(self.med_duration)+ '\n' + "treatment_duration" + str(self.treatment_duration)+ '\n' +"Patient "  + str(self.patient)
