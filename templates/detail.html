@@ -8,6 +8,7 @@
     <div class="row">
       <div class="container text-center ">
         <h1><font color="#f7ab2f">Your Personal MedScheduler , Health Matters!!!</font></h1>
+        <h5>Stay Fit With NaviaLifeCare</h5>
         <hr>
       </div>
       <br>
@@ -24,7 +25,7 @@
             <p class="card-text">treatment Duration: {{ medicines.treatment_duration }} days</p>
             <form action="{% url 'delete' medicines.id%}" method="post">
               {% csrf_token %}
-            <input type="submit" class="btn btn-danger" value="delete">
+            <input type="submit" class="btn btn-danger " value="DELETE">
             </form>
 
           </div>
